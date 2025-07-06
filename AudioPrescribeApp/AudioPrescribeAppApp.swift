@@ -27,6 +27,6 @@ struct AudioPrescribeAppApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: [RecordingSession.self, TranscriptionSegment.self])
     }
 }
